@@ -1,10 +1,10 @@
 {
 	"name": "gruvbox",
-	"displayName": "Gruvbox Theme",
-	"description": "Gruvbox Theme",
-	"version": "0.0.0",
-	"author": "jdinhify (https://github.com/jdinhify)",
-	"publisher": "jdinhlife",
+	"displayName": "Gruvbox Theme (Personal)",
+	"description": "Gruvbox Theme. Personal fork.",
+	"version": "1.0.0",
+	"author": "bmarcurella (https://github.com/bmarcurella)",
+	"publisher": "bmarcurella",
 	"engines": {
 		"vscode": "^1.67.2"
 	},
@@ -16,10 +16,10 @@
 		"color": "#3c3836",
 		"theme": "dark"
 	},
-	"homepage": "https://github.com/jdinhify/vscode-theme-gruvbox",
+	"homepage": "https://github.com/bmarcurella/vscode-theme-gruvbox",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/jdinhify/vscode-theme-gruvbox.git"
+		"url": "https://github.com/bmarcurella/vscode-theme-gruvbox.git"
 	},
 	"contributes": {
 		"themes": [
@@ -54,11 +54,6 @@
 				"path": "./themes/gruvbox-light-soft.json"
 			}
 		]
-	},
-	"__metadata": {
-		"id": "c6d564c4-ca8c-45ba-abf6-c85f2d1468d8",
-		"publisherDisplayName": "jdinhify",
-		"publisherId": "571210a8-f372-43c2-8b5a-018868d4ac96"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.21.0",
