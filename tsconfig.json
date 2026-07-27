@@ -1,21 +1,31 @@
 {
-	"compilerOptions": {
-		// Treat files as modules even if it doesn't use import/export
-		"moduleDetection": "force",
-
-		// Ignore module structure
-		"module": "Preserve",
-
-		// Allow JSON modules to be imported
-		"resolveJsonModule": true,
-
-		// Allow JS files to be imported from TS and vice versa
-		"allowJs": true,
-
-		// Use correct ESM import behavior
-		"esModuleInterop": true,
-
-		// Disallow features that require cross-file awareness
-		"isolatedModules": true
-	}
+  "compilerOptions": {
+    // tsx runs these on modern Node. Without this, target defaults to ES5 and
+    // the editor hides anything newer (Object.entries, Array.at, structuredClone...).
+    "target": "ES2022",
+    "lib": [
+      "ES2022"
+    ],
+    // Treat files as modules even if it doesn't use import/export
+    "moduleDetection": "force",
+    // Ignore module structure
+    "module": "Preserve",
+    // Allow JSON modules to be imported
+    "resolveJsonModule": true,
+    // Allow JS files to be imported from TS and vice versa
+    "allowJs": true,
+    // Use correct ESM import behavior
+    "esModuleInterop": true,
+    // Disallow features that require cross-file awareness
+    "isolatedModules": true,
+    // Full type safety. The codebase already passes this with zero errors.
+    "strict": true,
+    // tsx runs the sources directly, so nothing is ever compiled.
+    // Without this, allowJs makes tsc try to emit over eslint.config.mjs (TS5055).
+    "noEmit": true
+  },
+  // Without this, tsc pulls in every JS/TS file in the repo root, not just the generator.
+  "include": [
+    "src"
+  ]
 }

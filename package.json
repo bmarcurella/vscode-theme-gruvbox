@@ -71,7 +71,7 @@
 		"dev": "tsx watch ./src/main.ts",
 		"build": "tsx ./src/main.ts",
 		"package": "npm run build && vsce package",
-		"type:check": "tsc ./src/*.ts --noEmit",
+		"type:check": "tsc -p .",
 		"lint:check": "eslint ./src",
 		"format:check": "prettier ./src --check"
 	},
