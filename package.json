@@ -61,18 +61,16 @@
 		"@vscode/vsce": "^3.2.2",
 		"eslint": "^9.21.0",
 		"eslint-config-prettier": "^10.0.2",
-		"ovsx": "^0.10.1",
 		"prettier": "3.5.2",
-		"semantic-release": "^24.2.3",
 		"tsx": "^4.19.3",
 		"typescript": "^5.7.3",
 		"typescript-eslint": "^8.25.0"
 	},
 	"private": true,
 	"scripts": {
-		"semantic-release": "semantic-release",
 		"dev": "tsx watch ./src/main.ts",
 		"build": "tsx ./src/main.ts",
+		"package": "npm run build && vsce package",
 		"type:check": "tsc ./src/*.ts --noEmit",
 		"lint:check": "eslint ./src",
 		"format:check": "prettier ./src --check"
